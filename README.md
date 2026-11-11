@@ -84,3 +84,9 @@ python factura.py --test
 ## Licencia
 
 MIT — ver `LICENSE`.
+
+## Comprar
+
+FacturaRapida a **9 EUR** (una vez, tuyo para siempre, licencia de uso):
+
+**<https://payhip.com/b/5JhQO>**
