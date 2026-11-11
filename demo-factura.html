@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Factura F-2026-001</title>
+<style>
+@page { size: A4; margin: 20mm; }
+body { font-family: 'Segoe UI', Arial, sans-serif; color: #222; font-size: 13px; }
+h1 { font-size: 22px; margin: 0; color: #1a3c5e; }
+table { border-collapse: collapse; width: 100%; }
+th, td { border-bottom: 1px solid #ddd; padding: 6px 8px; text-align: left; }
+th { background: #1a3c5e; color: #fff; }
+.num { text-align: right; }
+.caja { width: 100%; }
+.derecha { text-align: right; }
+.tot { width: 45%; margin-left: auto; }
+.tot td { border: none; padding: 3px 8px; }
+.grand { font-size: 16px; font-weight: bold; border-top: 2px solid #1a3c5e !important; }
+.gris { color: #666; font-size: 11px; }
+</style>
+</head>
+<body>
+<div class="caja">
+  <div class="derecha">
+    <h1>FACTURA F-2026-001</h1>
+    <p class="gris">Fecha: 2026-11-10</p>
+  </div>
+  <p><strong>Mi Empresa S.L.</strong><br>
+  B12345674H · Calle Ejemplo 1, 28001 Madrid<br>
+  Banco: ES91 2100 0418 4502 0005 1332</p>
+  <hr>
+  <p><strong>Cliente</strong><br>Cliente Demo SL (B12345674)</p>
+</div>
+<table>
+<tr><th>Descripción</th><th>Cantidad</th><th>Precio</th><th>IVA</th><th>Importe</th></tr>
+<tr><td>Producto A</td><td class='num'>2</td><td class='num'>50,00 €</td><td class='num'>21%</td><td class='num'>100,00 €</td></tr><tr><td>Producto B</td><td class='num'>1</td><td class='num'>30,00 €</td><td class='num'>10%</td><td class='num'>30,00 €</td></tr><tr><td>Servicio C</td><td class='num'>3</td><td class='num'>15,00 €</td><td class='num'>4%</td><td class='num'>45,00 €</td></tr>
+</table>
+<table class="tot">
+<tr><td>IVA 21%</td><td class='num'>100,00 €</td><td class='num'>21,00 €</td></tr><tr><td>IVA 10%</td><td class='num'>30,00 €</td><td class='num'>3,00 €</td></tr><tr><td>IVA 4%</td><td class='num'>45,00 €</td><td class='num'>1,80 €</td></tr>
+<tr><td><strong>Base imponible</strong></td><td class="num"><strong>175,00 €</strong></td><td></td></tr>
+<tr><td><strong>Total IVA</strong></td><td class="num"><strong>25,80 €</strong></td><td></td></tr>
+<tr class="grand"><td>TOTAL</td><td class="num">200,80 €</td><td></td></tr>
+</table>
+<p class="gris">Gracias por su confianza. Formas de pago: transferencia al IBAN indicado.
+Plazo de pago: 30 días desde la fecha de la factura.</p>
+</body>
+</html>
