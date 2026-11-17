@@ -90,3 +90,18 @@ MIT — ver `LICENSE`.
 FacturaRapida a **9 EUR** (una vez, tuyo para siempre, licencia de uso):
 
 **<https://payhip.com/b/5JhQO>**
+
+
+## Comprar la edicion PRO
+
+El codigo de este repo es la **edicion basica**. La **edicion PRO** (guia
+completa de 60 paginas + codigo avanzado: plantillas, API y automatizaciones)
+esta en [Payhip](https://payhip.com/b/Wfeyw) por **19 EUR** (pago unico, sin
+suscripcion).
+
+- **Basico (9 EUR):** [payhip.com/b/5JhQO](https://payhip.com/b/5JhQO)
+- **PRO (19 EUR):** [payhip.com/b/Wfeyw](https://payhip.com/b/Wfeyw)
+- **Cupon:** `BIENVENIDA` (-20%) en el primer pedido, aplicable en el checkout.
+
+En [Product Hunt](https://www.producthunt.com/products/facturarapida) puedes
+votar y seguir el producto.
