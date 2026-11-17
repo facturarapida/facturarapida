@@ -1,107 +1,25 @@
-# FacturaRapida
+# facturarapida
 
-Facturador de bolsillo para pymes españolas: genera facturas HTML listas para
-imprimir en PDF con un solo comando. Sin instalaciones, sin suscripción,
-sin conexión a internet.
+**Servicio de automatizacion en Python por encargo**: automatizo tareas repetitivas, extraccion de datos y web scraping. Cada repo de esta cuenta es una demo real ejecutada (con salida en CSV/Excel), no un ejemplo teorico.
 
-## Qué hace
+## Servicios (busca lo que necesitas y mira la demo)
 
-- Valida automáticamente el DNI/NIF o CIF del cliente (con letra/dígito de
-  control): adiós a las facturas devueltas por letra mal escrita.
-- Calcula el IVA (21%, 10%, 4% y 0%), la base imponible y los totales con
-  formato español (121,00 €).
-- Genera una factura A4 elegante que abres en el navegador y guardas en PDF
-  con Ctrl+P.
+| Servicio | Repro real | Que entrega |
+|----------|-----------|-------------|
+| **Automatizacion RPA** (navegador autonomo) | [rpa-ecommerce-bot](https://github.com/facturarapida/rpa-ecommerce-bot) | Precios de un catalogo leidos por un robot, CSV + captura de evidencia |
+| **Web scraping por encargo** | [web-scraper-catalogo](https://github.com/facturarapida/web-scraper-catalogo) | Catalogo completo (100 productos demo) en CSV y Excel con filtros |
+| **Extraccion de datos a Excel** | [excel-from-html](https://github.com/facturarapida/excel-from-html) | Tablas HTML (web, informes, emails) -> .xlsx con numeros y porcentajes |
 
-## Requisitos
+Tambien: [facturarapida](https://github.com/facturarapida/facturarapida) (facturas), [validador](https://github.com/facturarapida/validador) (validacion de NIF en web).
 
-Python 3 (única dependencia: ninguna, usa solo la biblioteca estándar).
-En Windows: <https://www.python.org/downloads/> (marca "Add to PATH").
+## Como trabajo
 
-## Uso
+1. **Pantalla de tu caso**: me dices que tarea repites a mano (exportar un catalogo, apuntar precios, copiar una tabla web a Excel...).
+2. **Demo en tu tipo de datos**: adapto una de estas demos a tu caso en 1-2 dias.
+3. **Entrega**: script + datos en Excel/CSV + instrucciones. Tu equipo lo ejecuta sin depender de mi.
 
-```
-python factura.py --numero F-2026-001 --cliente-nif 12345678Z --cliente-nombre "Cliente SL" --lineas ejemplo.csv --output factura.html
-```
+Tecnologia: Python (Selenium, requests, BeautifulSoup, openpyxl). Sin coste de licencias.
 
-O en Windows, doble clic en `lanzar.bat` con los mismos parámetros:
+## Palabras clave
 
-```
-lanzar.bat --numero F-2026-001 --cliente-nif 12345678Z --cliente-nombre "Cliente SL" --lineas ejemplo.csv
-```
-
-### Parámetros
-
-| Parámetro | Descripción |
-|---|---|
-| `--numero` | Número de factura (p.ej. `F-2026-001`) |
-| `--cliente-nif` | DNI o CIF del cliente |
-| `--cliente-nombre` | Nombre o razón social |
-| `--lineas` | Archivo CSV con las líneas de la factura |
-| `--output` | HTML de salida (por defecto `factura.html`) |
-| `--fecha` | Fecha (por defecto, hoy) |
-| `--test` | Ejecuta el autotest interno |
-
-### Formato del CSV
-
-Separador **punto y coma** (se abre directamente en Excel español),
-sin cabecera:
-
-```
-descripcion;cantidad;precio;iva
-```
-
-Ejemplo (`ejemplo.csv`):
-
-```
-Producto A;2;50.00;21
-Producto B;1;30.00;10
-Servicio C;3;15.00;4
-```
-
-La columna `iva` es opcional: si falta se asume **21**. Valores: 21, 10, 4 o 0.
-
-### Datos de tu empresa
-
-Edita las constantes al inicio de `factura.py` (`EMPRESA_NOMBRE`,
-`EMPRESA_CIF`, `EMPRESA_DIR`, `EMPRESA_BANCO`).
-
-## Pregunta frecuentes
-
-- **¿Cómo paso la factura a PDF?** Abre el `.html` en cualquier navegador y
-  pulsa Ctrl+P → "Guardar como PDF". Ajustado a A4 por defecto.
-- **¿Qué pasa si el NIF no es válido?** El programa avisa con un mensaje en
-  español y no genera la factura.
-- **¿Funciona sin internet?** Sí, al 100%.
-- **¿Mis datos salen de mi ordenador?** No. No hay ni un solo envío de datos.
-
-## Autotest
-
-```
-python factura.py --test
-```
-
-## Licencia
-
-MIT — ver `LICENSE`.
-
-## Comprar
-
-FacturaRapida a **9 EUR** (una vez, tuyo para siempre, licencia de uso):
-
-**<https://payhip.com/b/5JhQO>**
-
-
-## Comprar la edicion PRO
-
-El codigo de este repo es la **edicion basica**. La **edicion PRO** (guia
-completa de 60 paginas + codigo avanzado: plantillas, API y automatizaciones)
-esta en [Payhip](https://payhip.com/b/Wfeyw) por **19 EUR** (pago unico, sin
-suscripcion).
-
-- **Basico (9 EUR):** [payhip.com/b/5JhQO](https://payhip.com/b/5JhQO)
-- **PRO (19 EUR):** [payhip.com/b/Wfeyw](https://payhip.com/b/Wfeyw)
-- **Cupon:** `BIENVENIDA` (-20%) en el primer pedido, aplicable en el checkout.
-
-En [Product Hunt](https://www.producthunt.com/products/facturarapida) puedes
-votar y seguir el producto.
+servicio automatizacion python · web scraping por encargo · extraccion de datos a excel · RPA · automatizacion de tareas · scraping a excel · bot de navegador · datos a csv
